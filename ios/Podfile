@@ -1,4 +1,5 @@
 # Resolve react_native_pods.rb with node to allow for hoisting
+use_modular_headers!
 require Pod::Executable.execute_command('node', ['-p',
   'require.resolve(
     "react-native/scripts/react_native_pods.rb",
@@ -27,7 +28,8 @@ end
 
 target 'imagestorage' do
   config = use_native_modules!
-
+  
+  pod 'RNFBStorage', :path => '../node_modules/@react-native-firebase/storage'
   # Flags change depending on the env values.
   flags = get_default_flags()
 
@@ -59,4 +61,7 @@ target 'imagestorage' do
     )
     __apply_Xcode_12_5_M1_post_install_workaround(installer)
   end
+  # target 'app' do
+  # pod 'RNFBStorage', :path => '../node_modules/@react-native-firebase/storage'
+  # end
 end

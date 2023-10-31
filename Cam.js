@@ -178,7 +178,7 @@ const Cam = () => {
          
           </View>
         ) : (
-          <Image source={require('./upload.png') } style={styles.imageBox} />
+          <Image source={require('./ph1.png') } style={styles.imageStyle} />
         )}
         <View style={styles.buttonContainer}>
           <TouchableOpacity
