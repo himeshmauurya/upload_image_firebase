@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "924089171139",
+    "project_id": "fileupload-78a1e",
+    "storage_bucket": "fileupload-78a1e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:924089171139:android:f09c519e59c7e7ea097676",
+        "android_client_info": {
+          "package_name": "com.imagestorage"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcJuNh2pvMVAsYgPd8EbmV7vhpu9IUqGM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
